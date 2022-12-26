@@ -77,8 +77,8 @@
   </div>
 
   <script>
-    var source = new EventSource("http://localhost:8000/ig/stream-logs");
-    // var source = new EventSource("https://52.30.84.14:8000/ig/stream-logs");
+    // var source = new EventSource("http://localhost:8000/ig/stream-logs");
+    var source = new EventSource("https://52.30.84.14:8000/ig/stream-logs");
     source.onmessage = function(event) {
         console.log(event.data);
         document.getElementById("progress").innerHTML = event.data + "%";
