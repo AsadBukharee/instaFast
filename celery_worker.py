@@ -493,4 +493,4 @@ def insta_scraper(influencer_names,client_name):
 
 
 if __name__ == '__main__':
-    insta_scraper("vogueitalia,valeriepasqualini","tester")
+    insta_scraper("mammagirotondo,misblack1,mikyale84","tester")

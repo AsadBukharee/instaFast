@@ -48,7 +48,8 @@ class InstagramCLI():
             if response.status_code == 200:
                 self.session.headers.update(
                     {'x-ig-app-id': '936619743392459', 'X-CSRFToken': response.cookies['csrftoken'],
-                     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'})
+                     # 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'})
+                     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'})
                 self.cookies = response.cookies
                 response = response.json()
                 if response['authenticated']:
@@ -166,6 +167,7 @@ class InstagramCLI():
                     users = []
                     res = {"next_max_id": None}
                     user_id = user_info['data']['user']['id']
+
                     logging.info(f"Fetching {username} {cli_context} data")
                     if optimized['count'] == "all":
                         optimized['count'] = int(user_info['data']['user']['edge_follow']['count'])
@@ -185,11 +187,13 @@ class InstagramCLI():
                                 f"https://i.instagram.com/api/v1/friendships/{user_id}/{cli_context}/",
                                 cookies=self.cookies, params=payload).json()
                             time.sleep(1)
+                            print(f"Fetched {self.counter} following")
                             big_list = res['big_list']
                             users.extend(res['users'])
                     except Exception as e:
                         # self.error_smaco(e, "")
-                        logging.error(f'Cannot scrape user {cli_context}. fully.{self.counter } extrected ')
+                        # here we will save the progress and status in db.
+                        logging.error(f'Cannot scrape user {cli_context}. fully. only {len(users) } extrected ')
                         return users
                     if save:
                         self.make_folder(optimized)
