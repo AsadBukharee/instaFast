@@ -1,0 +1,48 @@
+2022-12-23 17:01:28,975 [ERROR] Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2022-12-23 17:06:33,443 [ERROR] Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2022-12-23 17:20:22,515 [ERROR] Connection to Redis lost: Retry (0/20) now.
+2022-12-23 17:20:22,515 [ERROR] Connection to Redis lost: Retry (1/20) in 1.00 second.
+2022-12-23 17:20:23,517 [ERROR] Connection to Redis lost: Retry (2/20) in 1.00 second.
+2022-12-23 17:20:24,520 [ERROR] Connection to Redis lost: Retry (3/20) in 1.00 second.
+2022-12-23 17:20:25,523 [ERROR] Connection to Redis lost: Retry (4/20) in 1.00 second.
+2022-12-23 17:20:26,526 [ERROR] Connection to Redis lost: Retry (5/20) in 1.00 second.
+2022-12-23 17:20:27,528 [ERROR] Connection to Redis lost: Retry (6/20) in 1.00 second.
+2022-12-23 17:20:28,531 [ERROR] Connection to Redis lost: Retry (7/20) in 1.00 second.
+2022-12-23 17:20:29,533 [ERROR] Connection to Redis lost: Retry (8/20) in 1.00 second.
+2022-12-23 17:20:30,536 [ERROR] Connection to Redis lost: Retry (9/20) in 1.00 second.
+2022-12-23 17:20:31,538 [ERROR] Connection to Redis lost: Retry (10/20) in 1.00 second.
+2022-12-23 17:20:32,541 [ERROR] Connection to Redis lost: Retry (11/20) in 1.00 second.
+2022-12-23 17:20:33,543 [ERROR] Connection to Redis lost: Retry (12/20) in 1.00 second.
+2022-12-23 17:20:34,545 [ERROR] Connection to Redis lost: Retry (13/20) in 1.00 second.
+2022-12-23 17:20:35,548 [ERROR] Connection to Redis lost: Retry (14/20) in 1.00 second.
+2022-12-23 17:20:36,550 [ERROR] Connection to Redis lost: Retry (15/20) in 1.00 second.
+2022-12-23 17:20:37,552 [ERROR] Connection to Redis lost: Retry (16/20) in 1.00 second.
+2022-12-23 17:20:38,554 [ERROR] Connection to Redis lost: Retry (17/20) in 1.00 second.
+2022-12-23 17:20:39,557 [ERROR] Connection to Redis lost: Retry (18/20) in 1.00 second.
+2022-12-23 17:20:40,560 [ERROR] Connection to Redis lost: Retry (19/20) in 1.00 second.
+2022-12-23 17:20:41,562 [CRITICAL] 
+Retry limit exceeded while trying to reconnect to the Celery redis result store backend. The Celery application must be restarted.
+
+2022-12-26 09:46:57,133 [INFO] -----------------------------------
+2022-12-26 09:47:01,425 [INFO] Login Successful
+2022-12-26 09:47:07,981 [INFO] Fetching ilarygue following data
+2022-12-26 09:47:35,114 [ERROR] 
+Error in  function at line 175.
+Error Message - 'big_list'
+Type - <class 'KeyError'>
+Please try again. If issue persists,then open github issue and upload error snapshot - https://github.com/suyashjawale/InstagramCLI/issues
+2022-12-26 09:50:46,297 [INFO] -----------------------------------
+2022-12-26 09:50:52,344 [INFO] Login Successful
+2022-12-26 09:51:30,840 [INFO] -----------------------------------
+2022-12-26 09:51:35,039 [INFO] Login Successful
+2022-12-26 09:51:39,491 [ERROR] User not found
+2022-12-26 09:54:42,811 [ERROR] User not found
+2022-12-26 09:57:46,444 [ERROR] User not found
