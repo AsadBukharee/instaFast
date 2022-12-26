@@ -84,9 +84,8 @@ from celery_worker import email_sender,insta_scraper
 async def set_influencers(name: str = Form(), email: str = Form(), influencers: str = Form(), request: Request = None,db: Session = Depends(get_db)):
     print(name, email, influencers)
     # bots = crud.get_bot_list(db)
-    token = "HVLfB6ZiZtWSmcJZFAgqdmL9xOnYlJqs"#bots[0].csrf_token
     task = email_sender.delay(name, email, influencers)
-    insta_task = insta_scraper.delay(influencers,name,token)
+    insta_task = insta_scraper.delay(influencers,name)
     print("TASK ID IS : ",task.id,"  ",insta_task)
     return templates.TemplateResponse("index.html", context={"request": request})
     # return {"success": True, "message": "Influencers added successfully","status_code":status.HTTP_200_OK}
