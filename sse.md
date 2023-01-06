@@ -1,17 +1,3 @@
----
-title: 'sse'
-coverImage: 'https://firebasestorage.googleapis.com/v0/b/the-accessable-agency.appspot.com/o/assets%2Fposts%2Fhaha2663_artificial_intelligence_and_machine_learning_a9064c6d-a7a8-4010-b30c-5ed640511fab.png?alt=media&token=aeae3f4d-1785-4a75-9c4c-6799e3475fb2'
-date: '2022-12-27'
-type: 'blog-post'
-author:
-    name: Hasnain Haider
-    picture: 'https://firebasestorage.googleapis.com/v0/b/the-accessable-agency.appspot.com/o/assets%2Flogo%2FJust%20logo.svg?alt=media&token=bc318c06-6374-4f40-8d44-5979da7b715a'
-ogImage:
-    url: 'https://firebasestorage.googleapis.com/v0/b/the-accessable-agency.appspot.com/o/assets%2Fposts%2Fhaha2663_artificial_intelligence_and_machine_learning_a9064c6d-a7a8-4010-b30c-5ed640511fab.png?alt=media&token=aeae3f4d-1785-4a75-9c4c-6799e3475fb2'
-excerpt: Artificial intelligence (AI) is a rapidly advancing field that aims to create intelligent machines that can think
----
-
-
 # Using FastAPI for Server Side Events
 
 FastAPI is a modern, high performance, web framework for building APIs with Python 3.6+ based on standard Python type hints. It is an open source project built on top of Starlette, and inspired by previous web frameworks such as Flask and Hapi. FastAPI is an asynchronous framework, meaning it is limited to non-blocking, single-threaded operations. This makes it ideal for use cases requiring scalability such as server-side applications, streaming applications and real-time services.
